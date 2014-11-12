@@ -1,0 +1,93 @@
+http://jingyan.baidu.com/article/e73e26c0ce361624adb6a707.html
+
+首先下载git客户端程序,我下载的是Git-1.8.3-preview20130601.exe,安装后,执行Git Bash,这时你需要设置根据提示设置email和name,然后就可以创建自己的代码库了。
+
+当前项目未执行初始化请执行下面操作
+
+在本地创建新的Git仓库(连接别人的代码和创建自己的代码库)
+
+mkdir andbase
+
+cd andbase
+
+git init
+
+touch README.md
+
+git add README.md
+
+git commit -m 'hello world'
+
+git remote add origin git@github.com:Liutos/foobar.git
+
+将主分支修改推送到服务器
+
+git push -u origin master
+
+下载主分支数据
+
+git pull -u origin master
+
+连接本地已有的 Git 仓库
+
+git remote add origin git@github.com:Liutos/foobar.git
+
+git push -u origin master
+
+提交代码
+
+进入存放你所要提交代码的文件夹下
+
+git add .
+
+git commit -m 'hello world'
+
+git push -u origin yourbranch
+
+下载分支代码
+
+git pull  -u   origin yourbranch
+
+查看Git仓库中的文件状态
+
+git status
+
+向服务器的Git仓库中提交本地Git仓库已修改的文件或目录
+
+git push -u   origin yourbranch
+
+下载服务器端Git仓库中的文件或目录到本地当前目录。
+
+git clone git@github.com:Liutos/foobar.git
+
+查看所有分支
+
+git branch -a  
+
+建立newbranch分支
+
+git checkout -b newbranch
+
+切换到master分支
+
+git checkout yourbranch
+
+提交所有修改
+
+git commit -a
+
+合并分支
+
+将 coreteam/master 合并到本地的 newbranch 分支
+
+先 git checkout newbranch 切换到newbranch分支
+
+再 git merge coreteam/master
+
+将主分支修改推送到服务器
+
+git push origin master  
+
+将newbranch分支修改推送到服务器
+
+git push origin newbranch
